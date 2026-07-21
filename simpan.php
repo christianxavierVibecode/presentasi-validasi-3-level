@@ -18,10 +18,10 @@ $jumlah      = (int) $_POST['jumlah'];
 // -------------------------------------------------------------
 // VALIDASI LAYER 2: Backend Check (Aturan Bisnis)
 // -------------------------------------------------------------
-if ($jumlah <= 2) {
-    // Hentikan proses simpan jika jumlah 2 atau kurang
-    die("<h3>[GAGAL - Backend Validation]</h3> Jumlah barang harus lebih dari 2! (Input kamu: $jumlah)");
-}
+// if ($jumlah <= 2) {
+//     // Hentikan proses simpan jika jumlah 2 atau kurang
+//     die("<h3>[GAGAL - Backend Validation]</h3> Jumlah barang harus lebih dari 2! (Input kamu: $jumlah)");
+// }
 
 // 3. Jika Lolos Validasi Backend, Coba Simpan ke Database
 $sql = "INSERT INTO barang (nama_barang, jumlah) VALUES ('$nama_barang', $jumlah)";
