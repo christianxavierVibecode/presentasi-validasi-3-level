@@ -10,5 +10,5 @@ CREATE TABLE IF NOT EXISTS barang (
     
     -- VALIDASI LAYER 3: Database Constraint
     -- Mencegah data masuk jika nilai kolom 'jumlah' kurang dari atau sama dengan 2
-    CONSTRAINT chk_jumlah_minimal CHECK (jumlah > 2)
+    -- CONSTRAINT chk_jumlah_minimal CHECK (jumlah > 2)
 );
